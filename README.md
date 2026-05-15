@@ -96,9 +96,12 @@ An encoder LSTM processes the full input sequence and compresses it into a laten
 | `lstm_seq2seq_arch1_ring.py` | Seq2Seq Arch1 | Full η-ring | 
 | `lstm_seq2seq_arch2_ring.py` | Seq2Seq Arch2 | Full η-ring | 
 
-**η-ring:** Crystals in the ECAL barrel are organized in rings of constant pseudorapidity $$
+**η-ring:** Crystals in the ECAL barrel are organized in rings of constant pseudorapidity 
+
+$$
 \eta=\ln\left(\tan\left(\frac{\theta}{2}\right)\right)
 $$
+
 ![My graphic](img/figura11.jpg)
 ---
 
