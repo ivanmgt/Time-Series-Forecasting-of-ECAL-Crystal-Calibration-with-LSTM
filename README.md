@@ -85,7 +85,7 @@ An encoder LSTM processes the full input sequence and compresses it into a laten
 ### Summary Table
 
 | Script | Architecture | Scope | 
-|---|---|---|---|
+|---|---|---|
 | `lstm_multioutput.py` | Multioutput LSTM | Single crystal |
 | `lstm_multioutput_bidirectional.py` |  Multioutput LSTM Bidirectional | Single crystal |
 | `lstm_multioutput_ring.py` | Multioutput LSTM | Full η-ring | 
