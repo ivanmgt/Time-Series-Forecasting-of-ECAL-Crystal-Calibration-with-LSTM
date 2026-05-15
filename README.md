@@ -64,8 +64,10 @@ Data covers three LHC Run 2 years: **2016, 2017, and 2018**, with measurements a
 │   ├── figures/                # All comparison plots by model and horizon
 │   └── metrics/
 │       
-└── baselines/
-    └── naive_baseline.py       # Naive Baseline (last known value)
+├── baselines/
+│   ├── README.md
+│   └── naive_baseline.py       # Naive Baseline (last known value)
+└── img/
 ```
 
 ---
@@ -82,17 +84,17 @@ An encoder LSTM processes the full input sequence and compresses it into a laten
 
 ### Summary Table
 
-| Script | Architecture | Scope | Exogenous Input |
+| Script | Architecture | Scope | 
 |---|---|---|---|
-| `lstm_multioutput.py` | Multioutput LSTM | Single crystal | `delta_lumi` |
-| `lstm_multioutput_bidirectional.py` | Bidirectional Multioutput | Single crystal | `delta_lumi` |
-| `lstm_multioutput_ring.py` | Multioutput LSTM | Full η-ring | `delta_lumi` |
-| `lstm_multioutput_bidirectional_ring.py` | Bidirectional Multioutput | Full η-ring | `delta_lumi` |
-| `lstm_multioutput_embedding_ring.py` | Multioutput + Crystal Embedding | Full η-ring | `delta_lumi` + crystal ID |
-| `lstm_seq2seq_arch1.py` | Seq2Seq (encoder+decoder receive all vars) | Single crystal | `delta_lumi` |
-| `lstm_seq2seq_full_arch1.py` | Seq2Seq (decoder receives target only) | Single crystal | `delta_lumi` |
-| `lstm_seq2seq_ring_arch1.py` | Seq2Seq Arch1 | Full η-ring | `delta_lumi` |
-| `lstm_seq2seq_full_ring.py` | Seq2Seq Full | Full η-ring | `delta_lumi` |
+| `lstm_multioutput.py` | Multioutput LSTM | Single crystal |
+| `lstm_multioutput_bidirectional.py` |  Multioutput LSTM Bidirectional | Single crystal |
+| `lstm_multioutput_ring.py` | Multioutput LSTM | Full η-ring | 
+| `lstm_multioutput_bidirectional_ring.py` |  Multioutput LSTM Bidirectional | Full η-ring | 
+| `lstm_multioutput_embedding_ring.py` | Multioutput + Crystal Embedding | Full η-ring | 
+| `lstm_seq2seq_arch1.py` | Seq2Seq (encoder+decoder receive all vars) | Single crystal | 
+| `lstm_seq2seq_arch2.py` | Seq2Seq (decoder receives target only) | Single crystal | 
+| `lstm_seq2seq_arch1_ring.py` | Seq2Seq Arch1 | Full η-ring | 
+| `lstm_seq2seq_arch2_ring.py` | Seq2Seq Arch2 | Full η-ring | 
 
 **η-ring:** Crystals in the ECAL barrel are organized in rings of constant pseudorapidity η. Ring-trained models learn a single set of weights shared across all crystals in a ring, using the crystal ID as an embedding to capture individual behavior differences.
 
