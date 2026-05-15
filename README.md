@@ -99,7 +99,7 @@ An encoder LSTM processes the full input sequence and compresses it into a laten
 **η-ring:** Crystals in the ECAL barrel are organized in rings of constant pseudorapidity $$
 \eta=\ln\left(\tan\left(\frac{\theta}{2}\right)\right)
 $$
-![My graphic](img/figura11.png)
+![My graphic](img/figura11.jpg)
 ---
 
 ## Results
