@@ -107,7 +107,7 @@ $$
 
 ## Results
 
-Models are evaluated using **MAPE** (Mean Absolute Percentage Error) for single-crystal tasks and **WMAPE** (Weighted MAPE, weighted by number of measurements per crystal, as shown in the [Metrics](cabiar) section ) for ring-level evaluation. All results are reported on 2017 test data, trained on 2016.
+Models are evaluated using **MAPE** (Mean Absolute Percentage Error) for single-crystal tasks and **WMAPE** (Weighted MAPE, weighted by number of measurements per crystal, as shown in the [Metrics](results/metrics.md) section ) for ring-level evaluation. All results are reported on 2017 test data, trained on 2016.
 
 ### Single-Crystal Models in Ring 1
 
