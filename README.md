@@ -61,8 +61,8 @@ Data covers three LHC Run 2 years: **2016, 2017, and 2018**, with measurements a
 │   ├── lstm_seq2seq_arch2_ring.py             # Seq2Seq arch2, ring-trained
 |   └── seq2seq_art.py                         # Modified Seq2Seq model based on the Joshi et al. paper
 ├── results/
-│   ├── models/                # All comparison plots by model 
-│   └── metrics/
+│   ├── models.md               # All comparison plots by model 
+│   └── metrics.md
 │       
 ├── baselines/
 │   ├── README.md
