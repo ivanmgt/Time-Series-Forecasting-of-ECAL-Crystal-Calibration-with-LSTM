@@ -107,9 +107,9 @@ $$
 
 ## Results
 
-Models are evaluated using **MAPE** (Mean Absolute Percentage Error) for single-crystal tasks and **WMAPE** (Weighted MAPE, weighted by number of measurements per crystal) for ring-level evaluation. All results are reported on 2017 test data, trained on 2016.
+Models are evaluated using **MAPE** (Mean Absolute Percentage Error) for single-crystal tasks and **WMAPE** (Weighted MAPE, weighted by number of measurements per crystal, as shown in the [Metrics](cabiar) section ) for ring-level evaluation. All results are reported on 2017 test data, trained on 2016.
 
-### Single-Crystal Models (Crystal 30600, Anillo 1)
+### Single-Crystal Models in Ring 1
 
 | Model | Avg. improvement over Naive Baseline at H=96 |
 |---|---|
@@ -119,7 +119,7 @@ Models are evaluated using **MAPE** (Mean Absolute Percentage Error) for single-
 | Seq2Seq Architecture 2 | +21.1% |
 | Seq2Seq (reference article) | +30.7% |
 
-The **Seq2Seq Architecture 1** achieves the best performance for medium-to-long horizons (12–96 steps). Single-step prediction (H=1) remains challenging for all models due to the high-frequency noise in the calibration signal.
+The **Seq2Seq Architecture 1** achieves the best performance for medium-to-long horizons (12–96 steps). Single-step prediction (H=1) remains challenging for all models .
 
 ### Ring-Level Models (η-ring 1, 2017)
 
@@ -142,27 +142,12 @@ The Naive Baseline (repeat last known value) achieves MAPE ≈ 0.50 at H=48 step
 
 ---
 
-## Installation
-
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-pip install -r requirements.txt
-```
-
-**Requirements:** Python 3.9+, TensorFlow 2.x, pandas, numpy, scikit-learn, matplotlib.
-
----
-
 ## Usage
 
 Each script in `models/` is self-contained. To run a model:
 
-```bash
-python models/lstm_seq2seq_arch1.py
-```
 
-Scripts expect data in `data/` following the format described in `data/README.md`. Output plots and metrics are saved to `results/`.
+Scripts expect data in `data/` following the format described in `data/README.md`.
 
 ---
 
