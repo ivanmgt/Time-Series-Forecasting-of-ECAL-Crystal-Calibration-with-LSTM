@@ -4,7 +4,7 @@ This section presents and analyzes the most relevant results obtained from the d
 ![Results](img/Figure_30600.png)
 
 ### Ring-Trained Models
-![Results](img/Figure_ring1.png)
+![Results](img/Figure_Ring1.png)
 
 ### Single-Crystal Models Trained on Crystal 30600 Using Extended Forecast Horizons
 ![Results](img/Figure_30600ext.png)
