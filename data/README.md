@@ -6,6 +6,4 @@ Therefore, the dataset does not contain all crystals belonging to the complete E
 
 The data for each ring are stored in .csv format and contain, on average, approximately 17,000 records per crystal.
 
-For more information regarding the metadata associated with the files, visit the repository:
-
-FAIR ECAL Monitoring repository
+For more information regarding the metadata associated with the files, visit the repository [FAIR ECAL Monitoring repository](https://github.com/FAIR-UMN/fair_ecal_monitoring/tree/master/metadata?utm_source=chatgpt.com)
